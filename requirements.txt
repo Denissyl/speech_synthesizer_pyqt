@@ -1,0 +1,4 @@
+PyAudio==0.2.11
+pygame==1.9.6
+pyttsx3==2.71
+PyQt5==5.13.2

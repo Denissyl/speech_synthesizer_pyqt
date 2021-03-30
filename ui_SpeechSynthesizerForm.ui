@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpeechSynthesizerForm</class>
+ <widget class="QWidget" name="SpeechSynthesizerForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Синтез речи</string>
+  </property>
+  <widget class="QLineEdit" name="le_text">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>511</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_add_syllable">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>240</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Записать и добавить слог в базу данных(F2)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_play">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>511</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Воспроизвести(F1)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_text">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите слово, которое хотите воспроизвести</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_image">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>501</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>511</width>
+     <height>112</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="5">
+     <widget class="QPushButton" name="pb_r">
+      <property name="text">
+       <string>р</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8">
+     <widget class="QPushButton" name="pb_shch">
+      <property name="text">
+       <string>щ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pb_u">
+      <property name="text">
+       <string>у</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="11">
+     <widget class="QPushButton" name="pb_ye2">
+      <property name="text">
+       <string>ё</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QPushButton" name="pb_sg">
+      <property name="text">
+       <string>ь</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="9">
+     <widget class="QPushButton" name="pb_z">
+      <property name="text">
+       <string>з</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="pb_n">
+      <property name="text">
+       <string>н</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="11">
+     <widget class="QPushButton" name="pb_hs">
+      <property name="text">
+       <string>ъ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pb_k">
+      <property name="text">
+       <string>к</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pb_f">
+      <property name="text">
+       <string>ф</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QPushButton" name="pb_t">
+      <property name="text">
+       <string>т</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QPushButton" name="pb_l">
+      <property name="text">
+       <string>л</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="10">
+     <widget class="QPushButton" name="pb_e">
+      <property name="text">
+       <string>э</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="9">
+     <widget class="QPushButton" name="pb_zh">
+      <property name="text">
+       <string>ж</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="pb_ye">
+      <property name="text">
+       <string>е</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QPushButton" name="pb_b">
+      <property name="text">
+       <string>б</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="pb_p">
+      <property name="text">
+       <string>п</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QPushButton" name="pb_g">
+      <property name="text">
+       <string>г</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="pb_m">
+      <property name="text">
+       <string>м</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="pb_o">
+      <property name="text">
+       <string>о</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pb_j">
+      <property name="text">
+       <string>й</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="9">
+     <widget class="QPushButton" name="pb_yu">
+      <property name="text">
+       <string>ю</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QPushButton" name="pb_i">
+      <property name="text">
+       <string>и</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="pb_s">
+      <property name="text">
+       <string>с</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="QPushButton" name="pb_sh">
+      <property name="text">
+       <string>ш</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QPushButton" name="pb_d">
+      <property name="text">
+       <string>д</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pb_y">
+      <property name="text">
+       <string>ы</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pb_ts">
+      <property name="text">
+       <string>ц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pb_a">
+      <property name="text">
+       <string>а</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pb_v">
+      <property name="text">
+       <string>в</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="10">
+     <widget class="QPushButton" name="pb_kh">
+      <property name="text">
+       <string>х</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="pb_ch">
+      <property name="text">
+       <string>ч</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pb_ya">
+      <property name="text">
+       <string>я</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="10" colspan="2">
+     <widget class="QPushButton" name="pb_delete_all">
+      <property name="text">
+       <string>Удалить всё</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pb_delete_one_letter">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>80</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить одну букву</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Синтез речи в реальном времени</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>438</x>
+     <y>20</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Denis TTS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Google TTS</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_bd">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>БД</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
